@@ -7,10 +7,12 @@ STOP_WORDS = [
 def print_word_freq(file):
     """Read in `file` and print out the frequency of words in that file."""
 
-    with open(file) as moob:
-    
-        moob = moob.split()
-        print (moob.read())
+    with open(file) as words:
+
+        words = words.read()
+        words = words.lower()
+        words = words.split()
+        print(words)
 
 
 if __name__ == "__main__":
